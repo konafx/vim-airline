@@ -4,8 +4,10 @@
 
 scriptencoding utf-8
 if !(get(g:, 'fern_loaded', 0) || get(g:, 'loaded_fern', 0))
+  echo 'nyaa'
   finish
 endif
+echo 'baa'
 
 function! airline#extensions#fern#apply(...) abort
   if (&ft =~# 'fern')
