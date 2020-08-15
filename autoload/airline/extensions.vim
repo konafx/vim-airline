@@ -41,6 +41,11 @@ else
   let s:filetype_overrides['nerdtree'] = ['NERDTree', '']
 endif
 
+if (get(g:, 'fern_loaded', 0) || get(g:, 'loaded_fern', 0)) && get(g:, 'airline#extensions#fern#enabled', 1)
+  let s:filetype_overrides['fern'] = ['Fern', '']
+  call add(s:loaded_ext, 'fern')
+endif
+
 let s:filetype_regex_overrides = {}
 
 function! s:check_defined_section(name)
