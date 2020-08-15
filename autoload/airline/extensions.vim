@@ -167,7 +167,6 @@ function! airline#extensions#load()
 
   if (get(g:, 'fern_loaded', 0) || get(g:, 'loaded_fern', 0)) && get(g:, 'airline#extensions#fern#enabled', 1)
     let s:filetype_overrides['fern'] = ['Fern', '']
-  endif
     call add(s:loaded_ext, 'fern')
   endif
 
